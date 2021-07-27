@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Cadastro de Clientes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<!--FONTS-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<div class="background-overlay"><!--BACKGROUND OPACITY-->
+		<div class="container"><!--CONTAINER-->
+			<div class="title-container"><!--LEFT SIDE-->
+				<h1 class="red-title" id="title">L<span>cadastros</span></h1>
+			</div>
+			<div class="panel-container"><!--MAIN SIDE-->
+				<div class="panel">
+					<h1 class="panel-heading">Cadastro de Clientes</h1>
+					<form><!--FORM-->
+						<div class="input">
+							<label>Nome Completo:</label>
+							<input type="text" id="name" required>
+						</div>
+						<div class="input">
+							<label>E-mail:</label>
+							<input type="email" id="email" required>
+						</div>
+						<div class="row">
+							<div class="input">
+								<label>Nascimento: </label>
+								<input type="number" id="birth" placeholder="somente números" required>
+							</div>
+							<div class="input">
+								<label>Gênero: </label>
+								<select>
+									<option value=""></option>
+									<option value="">Masculino</option>
+									<option value="">Feminino</option>
+									<option value="">Outro</option>
+								</select>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="input">
+								<label>CPF: </label>
+								<input type="number" placeholder="somente números" required>
+							</div>
+							<div class="input">
+								<label>Telefone: </label>
+								<input type="number" placeholder="somente números" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input">
+								<label>Rua: </label>
+								<input type="text" required>
+							</div>
+							<div class="input">
+								<label>Número: </label>
+								<input type="number" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input">
+								<label>Bairro: </label>
+								<input type="text" required>
+							</div>
+							<div class="input">
+								<label>Estado: </label>
+								<select>
+									<option></option>
+									<option>AC</option>
+									<option>AL</option>
+									<option>AP</option>
+									<option>AM</option>
+									<option>BA</option>
+									<option>CE</option>
+									<option>DF</option>
+									<option>ES</option>
+									<option>GO</option>
+									<option>MA</option>
+									<option>MT</option>
+									<option>MS</option>
+									<option>MG</option>
+									<option>PA</option>
+									<option>PB</option>
+									<option>PR</option>
+									<option>PE</option>
+									<option>PI</option>
+									<option>RJ</option>
+									<option>RN</option>
+									<option>RS</option>
+									<option>RO</option>
+									<option>RR</option>
+									<option>SC</option>
+									<option>SP</option>
+									<option>SE</option>
+									<option>TO</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input">
+								<label>Complemento: </label>
+								<input type="text">
+							</div>
+							<div class="input">
+								<label>Cidade: </label>
+								<input type="text" required>
+							</div>
+						</div>
+						<div class="row"><!--FOOTER-->
+							<a class="red" href="produto.html">Cadastrar Produto</a>
+							<button class="red" type="submit">Enviar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

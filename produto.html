@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Cadastro de Produtos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<!--FONTS-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div class="background-overlay"><!--BACKGROUND OPACITY-->
+		<div class="container"><!--CONTAINER-->
+			<div class="title-container"><!--LEFT SIDE-->
+				<h1 class="blue-title" id="title">L<span>cadastros</span></h1>
+			</div>
+			<div class="panel-container"><!--MAIN SIDE-->
+				<div class="panel">
+					<h1 class="panel-heading">Cadastro de Produtos</h1>
+					<form><!--FORM-->
+						<div class="input">
+							<label>Nome: </label>
+							<input type="text" id="name" required>
+						</div>
+						<div class="row">
+							<div class="input">
+								<label>Preço: </label>
+								<input type="number" id="price" required>
+							</div>
+							<div class="input">
+								<label>Quantidade: </label>
+								<input type="number" id="quant" required>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="input">
+								<label>Validade: </label>
+								<input type="number" id="val" placeholder="somente números">
+							</div>
+							<div class="input">
+									<label>Categoria: </label>
+									<select>
+										<option value=""></option>
+										<option value="">Eletrônico</option>
+										<option value="">Moda</option>
+										<option value="">Móveis</option>
+										<option value="">Brinquedos</option>
+										<option value="">Papelaria</option>
+										<option value="">Cursos</option>
+										<option value="">Games</option>
+										<option value="">Livros</option>
+									</select>
+							</div>
+						</div>
+						<div class="input">
+							<label>Fornecedor: </label>
+							<input type="text" id="for" required>
+						</div>
+						<div>
+							<textarea placeholder="Descrição"></textarea>
+						</div>
+						<div class="row"><!--FOOTER-->
+							<a class="blue" href="cliente.html">Cadastrar Cliente</a>
+							<button class="blue" type="submit">Enviar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
